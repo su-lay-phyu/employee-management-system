@@ -25,6 +25,14 @@ public class Employee {
     private String gender;
     private Date dob;
     private String address;
-    @Column(name = "joining_date")
-    private Date joiningDate;
+    @Column(name = "start_date")
+    private Date startDate;
+    @Column(name = "end_date")
+    private Date endDate;
+    @Column(name = "employee_status")
+    @Enumerated(EnumType.STRING)
+    private EmployeeStatus employeeStatus;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name="department_id")
+    private Department department;
 }

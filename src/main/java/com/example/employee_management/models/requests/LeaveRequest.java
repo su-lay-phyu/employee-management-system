@@ -1,6 +1,5 @@
 package com.example.employee_management.models.requests;
 
-import com.example.employee_management.models.entities.LeaveType;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;

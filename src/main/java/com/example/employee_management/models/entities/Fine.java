@@ -1,19 +1,13 @@
 package com.example.employee_management.models.entities;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
 
 @Entity
-@Table(name = "positions")
-@Getter
-@Setter
-@RequiredArgsConstructor
-public class Position {
+@Table(name = "fines")
+public class Fine {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private String description;
+    private int amount;
 }

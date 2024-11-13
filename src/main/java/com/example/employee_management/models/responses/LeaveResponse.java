@@ -1,10 +1,5 @@
 package com.example.employee_management.models.responses;
 
-import com.example.employee_management.models.entities.LeaveType;
-import jakarta.persistence.Column;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.Lob;
-import jakarta.persistence.ManyToOne;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
